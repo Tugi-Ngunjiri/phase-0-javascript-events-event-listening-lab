@@ -1,6 +1,11 @@
 <!DOCTYPE html>
+addEventListener()
 <html lang="en">
 <head>
+  const input = document.getElementById('input');
+input.addEventListener('click', function() {
+  alert('I was clicked!');
+});
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,12 +18,23 @@
    }
   </style>
 </head>
-<body>
+expected false to be true
+<body>+true
+  function() {
+    alert('I was clicked!');
+  }
   <main id="main">My ID is "main"!</main>
   <br />
   <div>
       <input id="button" type="button" value="Click Me!"/>
   </div>
+  const input = document.getElementById('input');
+
+function clickAlert() {
+  alert('I was clicked!');
+}
+
+input.addEventListener('click', clickAlert);
   <br />
   <div>
     1
