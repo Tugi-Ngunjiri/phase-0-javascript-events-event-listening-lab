@@ -1,58 +1,72 @@
+// ingEventListener() {
+// }
+// !DOCTYPE
+//  html>
+// addEventListener()
+// <html 
+//  Lang="en">
+
+// <head>
+
+//   const input = document.getElementById('input');
+// input.addEventListener('click', function() 
+//   alert('I was clicked!'););
+//   <meta charset="UTF-8"/> ,
+//   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+//   <title>Listening to Nodes</title>
+//   <style>
+//    div {
+
+//      border : 1px  solid  rgb(16, 58, 83);
+//      padding: 6px;
+//      min-height: 12px;
+//    }
+//   </style>
+// </head>
+// expected false to be true
+// <body>+true
+//   function() {
+//     alert('I was clicked!');
+//   }
+//   <main id="main">My ID is "main"!</main>
+//   <br />
+//   <div>
+//       <input id="button" type="button" value="Click Me!"/>
+//   </div>
+//   const input = document.getElementById('input');
+
+// function clickAlert() {
+//   alert('I was clicked!');
+// }
+
+// input.addEventListener('click', clickAlert);
+//   <br />
+//   <div>
+//     1
+//     <div>
+//       2
+//       <div>
+//         3
+//         <div>
+//           4
+//           <div>
+//             5
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+//   <script type="text/javascript" src="index.js"></script>
+// </body>
+// </html>
+
+
+
 function addingEventListener() {
+  const button = document.getElementById('button')
+  button.addEventListener("click", function(){
+    alert('I was clicked')
+  });
 }
-<!DOCTYPE html>
-addEventListener()
-<html lang="en">
-<head>
-  const input = document.getElementById('input');
-input.addEventListener('click', function() {
-  alert('I was clicked!');
-});
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Listening to Nodes</title>
-  <style>
-   div {
-     border: 1px solid red;
-     padding: 6px;
-     min-height: 12px;
-   }
-  </style>
-</head>
-expected false to be true
-<body>+true
-  function() {
-    alert('I was clicked!');
-  }
-  <main id="main">My ID is "main"!</main>
-  <br />
-  <div>
-      <input id="button" type="button" value="Click Me!"/>
-  </div>
-  const input = document.getElementById('input');
-
-function clickAlert() {
-  alert('I was clicked!');
-}
-
-input.addEventListener('click', clickAlert);
-  <br />
-  <div>
-    1
-    <div>
-      2
-      <div>
-        3
-        <div>
-          4
-          <div>
-            5
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="index.js"></script>
-</body>
-</html>
+addingEventListener()
